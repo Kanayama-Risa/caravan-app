@@ -4,6 +4,9 @@ class BlogsController < ApplicationController
 
   def show
   end
+  
+  def index
+    @blogs = Blog.all
 
   def new
     @blog = Blog.new
